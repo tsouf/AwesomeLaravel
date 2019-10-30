@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+   // return 'Hello';
+});*/
+
+Route::get('/', 'PagesController@index' );
+Route::get('/about', 'PagesController@about' );
+Route::get('/services', 'PagesController@services' );
+
+//Automatically map routes to the functions
+Route::resource('posts','PostController');
+
+
+/*Route::get('about',function(){
+    return view('pages.about');
+}); */
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
