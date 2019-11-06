@@ -17,8 +17,8 @@
 });*/
 
 Route::get('/', 'PagesController@index' );
-Route::get('/about', 'PagesController@about' );
-Route::get('/services', 'PagesController@services' );
+
+
 
 //Automatically map routes to the functions
 Route::resource('posts','PostController');
