@@ -22,6 +22,7 @@ Route::get('/', 'PagesController@index' );
 
 //Automatically map routes to the functions
 Route::resource('posts','PostController');
+Route::resource('foods','FoodController');
 
 
 /*Route::get('about',function(){

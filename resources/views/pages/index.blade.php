@@ -2,7 +2,9 @@
 
   @section('content')
 
-  <img src="{{asset('/images/food.jpg')}}" class="center-fit" >
+  <div>
+    <img id="forest" width="100%" height="500" src="{{asset('/images/food.jpg')}}" >
+  </div>
 
         
 @endsection

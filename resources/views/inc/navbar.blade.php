@@ -27,6 +27,7 @@
               <li><a href="/about">About</a></li>
               <li><a href="/services">Services</a></li>
               <li><a href="{{ url('/') }}/posts">Blog</a></li>
+              <li><a href="{{ url('/') }}/foods">Food</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->

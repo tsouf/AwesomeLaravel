@@ -1,8 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-<<<<<<< HEAD
-=======
-
->>>>>>> 66353f53434543e46c4aaea3b3749a3edecd2b05
 
 
 
@@ -13,6 +9,7 @@
  */
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 
 html {
   font-family: sans-serif;
@@ -6218,6 +6215,7 @@ a.badge:focus {
   color: inherit;
   background-color: #eeeeee;
 }
+
 
 .jumbotron h1,
 .jumbotron .h1 {
