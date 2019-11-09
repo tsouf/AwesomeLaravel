@@ -9,7 +9,7 @@
                 
             <div class="col-sm-12 col-md-4 col-lg-4" >
                 <h3 class="text-center">{{ $food->title }}</h3>
-                <img id={{ $food->image }}  src="{{URL::asset('images/food.jpg')}}" width="75%" style="margin-left: auto;margin-right: auto;display: block;">
+                <img id={{ $food->image }}  src="{{ URL::asset("images/$food->image") }}" width="75%" style="margin-left: auto;margin-right: auto;display: block;">
             </div>
             <div class="col-sm-12 col-md-8 col-lg-8" style="text-align: center; padding-top: 7%;" >
                 <p style="color: black;">{{ $food->description }}</p>
@@ -19,6 +19,6 @@
         @endforeach
         {{ $foods->links() }}
     @else 
-    <p>No posts found </p>
+    <p>No food for you </p>
     @endif
     @endsection
