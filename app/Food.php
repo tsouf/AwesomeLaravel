@@ -12,4 +12,8 @@ class Food extends Model
     public $primaryKey = 'id';
     //Timestamps
     public $timestamps = true;
+
+    public function users(){
+        return $this -> belongsToMany('App\User');
+    }
 }

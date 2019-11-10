@@ -12,9 +12,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a href="/posts/create" class = "btn btn-primary">Create Post</a>
-                        <h3>Your Blog Posts!!!</h3>
-                        @if(count($posts)>0)
+                    
+                        <h3>Your Favourite Food</h3>
+                        @if(count($foods)>0)
                         <table class="table table-striped">
                             <tr>
                                 <th>Title</th>
@@ -22,21 +22,19 @@
                                 <th></th>
                                
                             </tr>
-                            @foreach($posts as $post)
+                            @foreach($foods as $food)
                             <tr>
-                                    <td>{{ $post->title }}</td>
-                                    <td><a href="/posts/{{ $post->id }}/edit" class= "btn btn-success">Edit</a></td>
-                                    <td>
-                                            {!! Form::open(['action' => ['PostController@destroy',$post->id], 'method' => 'POST', 'class' => 'pull-right']) !!}
-                                            {{ Form::hidden('_method', 'DELETE') }}
-                                            {{ Form::submit('Delete',['class' => 'btn btn-danger']) }}
-                                     {!! Form::close() !!}
+                                    <td>{{ $food->title }}</td>
+                                    <td style="text-align: center"><p>{{ $food->description }}</p></td>
+                                    <td style="text-align: center">
+                                        <a href="{{ url('/') }}/foods/{{ $food->id }}" class = "btn btn-primary">Go</a>
                                     </td>
                             </tr>
                             @endforeach
                         </table>
                         @else
-                        <p>You have no posts</p>
+                            <p>You have not added your favourite dishes</p>
+                            <a href="{{ url('/') }}/foods" class = "btn btn-primary">Search your favourite dishes</a>
                         @endif
                     </div>
                 </div>

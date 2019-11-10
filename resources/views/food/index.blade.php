@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Posts</h1>
+<h1>Food</h1>
     @if(count($foods) > 0)
         @foreach($foods as $food)
         <a href="{{ url('/') }}/foods/{{ $food->id }}">

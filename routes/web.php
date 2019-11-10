@@ -31,4 +31,8 @@ Route::resource('foods','FoodController');
 
 Auth::routes();
 
+Route::post('foods/{id}', [
+    'uses' => 'FoodController@addDelFavourite'
+  ]);
+
 Route::get('/dashboard', 'DashboardController@index');
