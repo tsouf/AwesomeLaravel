@@ -10,6 +10,7 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -23,6 +24,10 @@ html {
 
 body {
   margin: 0;
+}
+
+.testing{
+  background-color: #196c4b;
 }
 
 article,
@@ -6214,6 +6219,7 @@ a.badge:focus {
   color: inherit;
   background-color: #eeeeee;
 }
+
 
 .jumbotron h1,
 .jumbotron .h1 {
