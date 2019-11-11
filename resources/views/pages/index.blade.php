@@ -3,7 +3,7 @@
  
   @section('content')
 
-  <img src="{{asset('/images/new1.jpg')}}" id="frontpic" >
+  <img src="{{asset('/images/new1.jpg')}}" id="frontpic" width="75%" height="75%" style="margin-left: auto;margin-right: auto;display: block;">
 
   <br>
   <br>
