@@ -23,7 +23,7 @@
 <body>
     
        @include('inc.navbar')
-        <div class="container">
+        <div class="container navbar">
             @include('inc.messages')
             @yield('content')
             <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
@@ -31,7 +31,7 @@
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
     </div>
-   
+
 
 </body>
 </html>

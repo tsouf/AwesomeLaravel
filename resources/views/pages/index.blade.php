@@ -1,9 +1,17 @@
-  @extends('layouts.app')
+
+@extends('layouts.app')
  
   @section('content')
 
 
-  <img src="{{asset('/images/food.jpg')}}" id="frontpic" width="100%" height="100%" >
-  
-        
+  <img src="{{asset('/images/new1.jpg')}}" id="frontpic" >
+
+  <br>
+  <br>
+   <div class="footer">
+      <b>Copyright 2019. All rights reserved. </b>
+   </div>
+ 
+
 @endsection
+
