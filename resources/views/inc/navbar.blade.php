@@ -1,4 +1,9 @@
+<link href="{{asset('css/app.css') }}" rel="stylesheet">
+
+
 <nav class="navbar navbar-inverse">
+        <div class="row1">
+            </div>
     <div class="container">
         <div class="navbar-header">
 
@@ -26,6 +31,7 @@
               <li><a href="{{ url('/') }}/">Home</a></li>
               <li><a href="{{ url('/') }}/foods">Food</a></li>
               <li><a href="{{ url('/') }}/categories">Categories</a></li>
+              
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -59,4 +65,8 @@
             </ul>
         </div>
     </div>
+    <div class="row2">
+        </div>
 </nav>
+
+
