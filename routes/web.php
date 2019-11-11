@@ -23,6 +23,7 @@ Route::get('/', 'PagesController@index' );
 //Automatically map routes to the functions
 Route::resource('posts','PostController');
 Route::resource('foods','FoodController');
+Route::resource('categories','CategoryController');
 
 
 /*Route::get('about',function(){
@@ -34,5 +35,7 @@ Auth::routes();
 Route::post('foods/{id}', [
     'uses' => 'FoodController@addDelFavourite'
   ]);
+
+  Route::post('categories/{id}','CategoryController@filterCategories');
 
 Route::get('/dashboard', 'DashboardController@index');

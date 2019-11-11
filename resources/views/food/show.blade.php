@@ -25,4 +25,6 @@
         <p style="word-wrap: break-word; color:black;">{!! $food->recipe!!}</p>
     </div>
 </div>
+
+
 @endsection

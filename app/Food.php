@@ -16,4 +16,8 @@ class Food extends Model
     public function users(){
         return $this -> belongsToMany('App\User');
     }
+
+    public function categories(){
+        return $this -> belongsToMany('App\Category');
+    }
 }
