@@ -9,7 +9,7 @@
                 <h3 class="text-center">{{ $category->title }}</h3>
                 <img id={{ $category->image }}  src="{{ URL::asset("images/$category->image") }}" width="10%" style="margin-left: auto;margin-right: auto;display: block;">
                 {!! Form::open(['action' => ['CategoryController@filterCategories',$category->id], 'method' => 'POST', 'class' => 'pull-right']) !!}
-                    {{ Form::submit('Go',['class' => 'btn btn-danger']) }}
+                    {{ Form::submit('Next',['class' => 'btn btn-success']) }}
                 {!! Form::close() !!}
             </div>
         <!--</a>-->

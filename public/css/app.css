@@ -101,6 +101,7 @@ It should be used in conjunction with a second class or ID
   padding-bottom: 8px;
 }
 
+
 .hoc {
   display: block;
   margin: 0 auto;
@@ -2098,7 +2099,7 @@ pre code {
 
 .container {
   
-  padding-right: 30px;
+  padding-right: 0px;
   padding-left: auto;
   margin-right: auto;
   margin-left: auto;

@@ -28,7 +28,7 @@
             </ul>
 
             <ul class="nav navbar-nav">
-              <li><a href="{{ url('/') }}/">Home</a></li>
+             <!-- <li><a href="{{ url('/') }}/">Home</a></li> -->
               <li><a href="{{ url('/') }}/foods">Food</a></li>
               <li><a href="{{ url('/') }}/categories">Categories</a></li>
               
@@ -47,7 +47,7 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/') }}/dashboard">Dashboard</a></li>
+                            <li><a href="{{ url('/') }}/dashboard">Favorites</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
