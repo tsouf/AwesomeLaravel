@@ -98,6 +98,10 @@ class CategoryController extends Controller
         ->join('category_food', 'category_food.food_id', '=', 'foods.id')
         ->where('category_food.category_id', $id)
         ->paginate(10);
+
+        $category_title=DB::table('category')
+        ->select('title')
+        ->where('id',$id);
         
         return view('food.index')->with('foods',$foods);
         
